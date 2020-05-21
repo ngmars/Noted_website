@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Noted!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Nitish" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="style.css">
+<header>
+	<div class="form-inline" >
+		<div class="container-fluid" id="M_header">
+		<a href= "#" class="logo" onclick=jumptoday() >Noted!</a>
+
+			</li>
+		</ul>
+	</div>
+	</div>
+
+</header>
+
+<body>
+	<div  class="container-fluid" id="Main_body">
+		
+		<div class="card" id="main_card">
+		<div class="form-inline">
+		<h3 class= "card-header col-sm-6" id="monthAndYear" > Month and Year </h3>
+		
+		
+		<button class="btn btn-oultine-primary col-sm-6" onclick=jumptoday() id="today_btn">Today</button>
+	</div>
+
+		<table class="table table-bordered table-responsive-sm table-fluid" id="calendar">
+			<thread>
+				<tr>
+					<th>Sunday</th>
+					<th>Monday</th>
+					<th>Tueday</th>
+					<th>Wedneday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+					<th>Saturday</th>
+				</tr>
+			</thread>
+			<tbody id="calendar-body">
+				<tr>
+					<td><input type='text' ></td>
+			</tr>
+
+			</tbody>
+	</table>
+	<div class="form-inline" id="shift_month">
+				<button class="btn btn-oultine-primary col-sm-6" onclick=previous() id="shift_month_prev">Previous</button>
+				<button class="btn btn-oultine-primary col-sm-6" onclick=next() id="shift_month_next" >Next</button>
+	</div>
+	<br> 
+		</div>
+	
+	<div class="full-height" id="jmp_btns">
+	<form class="form-inline col-sm-12" id="Select_Jump">
+		Choose Month: <select class= "form-inline col-sm-5" id="M_drop" name="Wmonth">
+		
+				  <option value=0>January</option>
+				  <option value=1>February</option>
+				  <option value=2>March</option>
+				  <option value=3>April</option>
+				  <option value=4>May</option>
+				  <option value=5>June</option>
+				  <option value=6>July</option>
+				  <option value=7>August</option>
+				  <option value=8>September</option>
+				  <option value=9>October</option>
+				  <option value=10>November</option>
+				  <option value=11>December</option>
+				  </select >
+		  Choose Year: <input class= "form-inline col-sm-5" type="year" id="Wyear" name="Wyear" >
+		  <input  value="Submit" class= "form-inline col-sm-12 text-center" id="jump_submit" onclick=jump()>
+		 
+		</form><br>
+	</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+<footer class="container-fluid" style="background-color: #FF5656">
+	<h4 class="text-center" style="color: #fff;">&copy; 2020 Nitish G. All rights reserved </h4>
+</footer>
