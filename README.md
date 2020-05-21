@@ -1,1 +1,2 @@
-# A simple caendar baseed nite taking website
+# A simple caendar baseed note taking website
+work still in progress
